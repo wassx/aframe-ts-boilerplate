@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "copy-html": "ncp ./src/index.html ./dist/index.html",
+    "copy-html": "mkdirp ./dist && ncp ./src/index.html ./dist/index.html",
     "build": "npm run copy-html && tsc -w",
     "start": "live-server --https=./node_modules/live-server-https --open=./dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "live-server-https": "^0.0.2",
-    "ncp": "^2.0.0"
+    "ncp": "^2.0.0",
+    "mkdirp": "^1.0.4"
   }
 }
