@@ -2,3 +2,5 @@
 /typescript-boilerplate/src/aframe-wrapper/aframe_wrapper.js
 /typescript-boilerplate/src/aframe-wrapper/entity_builder.js
 /typescript-boilerplate/src/index.js
+*.iml
+.idea
