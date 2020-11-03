@@ -1,4 +1,4 @@
-import {ComponentWrapper} from "./aframe-wrapper/aframe_wrapper";
+import {ComponentWrapper} from "aframe-typescript-toolkit";
 
 export interface Test {
     handRotationY: number;
